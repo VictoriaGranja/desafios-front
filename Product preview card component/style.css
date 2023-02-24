@@ -1,0 +1,123 @@
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  background: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+p {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+  height: 450px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+#produto {
+  font-family: "Fraunces";
+  margin-top: 20px;
+}
+
+.info {
+  margin: 30px;
+}
+
+#perfume {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+
+#descricao {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-family: "Fraunces";
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 20px;
+}
+
+#original {
+  text-decoration: line-through;
+}
+
+#desconto {
+  color: hsl(158, 36%, 37%);
+}
+
+.but {
+  font-family: "Montserrat";
+  background: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 5px;
+  padding: 13px 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+}
+
+a:hover{
+  background: hsl(158, 32%, 15%);
+}
+
+#foto{
+  max-width: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#icon-cart{
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  
+  .card{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    height: 450px;
+  }
+  #foto{
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+  }
+}
